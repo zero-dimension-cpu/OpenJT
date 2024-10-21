@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/common.css">
+
 </head>
 
 <body>
@@ -29,16 +30,38 @@
       </ul>
     </div>
     <div class="search">
-      <input type="text" value="输入关键字">
+      <input type="text" placeholder="输入关键字">
       <button><span class="iconfont">&#xe61d;</span></button>
     </div>
     <div class="user">
-
+      <input class="login" type="button" value="Log In">
+      <input class="signup" type="button" value="Sign up">
     </div>
   </div>
   <!-- header end -->
   <!-- body start -->
+  <div id="banner" class="w">
+    <span class="iconfont" @click="preImage">&#xe618;</span>
+    <span class="iconfont" @click="nextImage">&#xe617;</span>
+    <div class="bd">
+      <img v-bind:src="currentSrc" alt="">
+    </div>
+
+    <div class="dot">
+      <ul>
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <div class="info">
+
+  </div>
   <!-- body end -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./JS/index.js"></script>
 </body>
 
 </html>

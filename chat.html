@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoTangLM-chat</title>
+  <link rel="stylesheet" href="./css/chat.css">
+</head>
+
+<body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="module" src="./JS/chat.js"></script>
+  <div class="nav">
+    <div class="logo" onclick="location.href='./index.html'">
+      <div class="img"></div>
+      <span>JoTangLM</span>
+    </div>
+    <div class="message">
+      <span class="iconfont">&#xe61e;</span>
+      <span>会话</span>
+    </div>
+    <div class="user">
+      <span class="iconfont">&#xe61f;</span>
+      <span>个性化</span>
+    </div>
+  </div>
+  <div class="chat-container">
+    <div class="chat-window" id="chatWindow">
+      <!-- 对话内容将动态添加到这里 -->
+    </div>
+    <div class="input-container">
+      <input type="text" id="userInput" placeholder="输入你的消息...">
+      <button id="sendButton">发送</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
